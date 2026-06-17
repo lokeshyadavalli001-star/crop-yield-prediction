@@ -73,15 +73,16 @@ season = st.selectbox("Season", seasons)
 crop_year = st.number_input(
     "Crop Year",
     min_value=1997,
-    max_value=2035,
-    value=2025
+    max_value=2020,
+    value=2015
 )
 
 area = st.number_input(
-    "Area",
-    min_value=0.0,
+    "Area (hectares)",
+    min_value=0.1,
     value=100.0
 )
+
 
 annual_rainfall = st.number_input(
     "Annual Rainfall (mm)",
